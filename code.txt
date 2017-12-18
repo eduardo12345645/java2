@@ -1,0 +1,27 @@
+public void insertarxprocedimiento(){
+STring sql="call sqinsertarproducto(?,?,?,?,?,?,?);
+Conexion cn = new Conexion();
+CallableStatement st =cn.prepareCAll(sql);
+cn.setString(1,txtCod.getTExt);
+cn.setString(2,txtNom.getText);
+cn.setString(3,txtApe.getText);
+}
+cn.executeUpdate;
+}
+
+
+
+
+
+
+define //
+create procedure sp(
+in cod char(3),
+in nom varchar(40),
+in ape varchar(40)
+begin
+insert into productos(cod,nom,ape);
+end
+//
+call sqinsertarproducto('001','leche','
+
