@@ -9,11 +9,6 @@ cn.setString(3,txtApe.getText);
 cn.executeUpdate;
 }
 
-
-
-
-
-
 define //
 create procedure sp(
 in cod char(3),
@@ -23,5 +18,15 @@ begin
 insert into productos(cod,nom,ape);
 end
 //
-call sqinsertarproducto('001','leche','
+call sqinsertarproducto('001','leche','gloria');
+
+
+create procedure spbuscar(
+in buscar char(5)
+begin
+select * from productos where idprod=buscar
+end
+//
+
+exec spbuscar('001');
 
